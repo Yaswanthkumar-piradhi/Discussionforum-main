@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    /* background: url('https://th.bing.com/th/id/OIP.ODKZjbQydn9RQxR72n-sTwHaHa?pid=ImgDet&rs=1') no-repeat; */
+    /* background-size: cover;
+    background-position: center; */
+    background-color: #d2f8d2;
+}
+body:before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 100vh;
+    background: url(images/shape-1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -111;
+    opacity: 0.9;
+}
+section#landing-page {
+    position: fixed;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+.branding {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    padding: 20px 0;
+}
+ul.listing {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+ul.listing li {
+    margin: 0 20px;
+}
+ul.listing > li > a {
+    color: #fff;
+    text-decoration: unset;
+    font-size: 20px;
+    line-height: 30px;
+}
+.site-url {
+    display: block;
+}
+.site-url > img {
+    width: 100%;
+    max-width: 50px;
+}
+.content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 300px);
+}
+h2 {
+    font-size: 100px;
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+}
+p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+}
+.btn-explore {
+    padding: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    background: url(images/button.png)no-repeat;
+    background-size: cover;
+    width: 220px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: unset;
+}
+ul.social-icons.listing {
+    position: fixed;
+    bottom: 20px;
+}
+ul.social-icons.listing > li > a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    border: 2px solid;
+    border-radius: 100%;
+    font-size: 15px;
+}
+ul.social-icons.listing > li {
+    margin: 0 10px;
+}
+.float-end{
+  float:right;
+  margin-top: -350px;
+  padding:50px;
+}
+.pp{
+  font-size:30px;
+  padding:15px;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+.content{
+  float:inline-start;
+}
+    </style>
+    
+</head>
+<body>
+    <!-- <div style = "background-image: url('https://th.bing.com/th/id/OIP.ODKZjbQydn9RQxR72n-sTwHaHa?pid=ImgDet&rs=1');"></div> -->
+  <section id="landing-page">
+    <div class="branding">
+      <div class="logo">
+        <a href="#" class="site-url"><img src="" alt="logo"></a>
+      </div>
+      <nav class="navbar">
+        <ul class="listing">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="content">
+      <div class="content-inner">
+        <h2 class="heading">Mini Project</h2>
+        <a href="newlogin.html" class="btn-explore">Login</a>
+        <a href="register.php" class="btn-explore">Register</a>
+      </div>
+    </div>
+    <div class="float-end">
+      <p class="pp"><b>Project By : </b></p>
+      <p class="pp">S.Sai Chetana Priya</p>
+      <p class="pp">S.Ratan Kumar</p>
+      <p class="pp">P.Varsha</p>
+      <p class="pp">P.Yashwanth Kumar</p>
+    </div>
+    
+    <ul class="social-icons listing">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+    </ul>
+  </section>
+</body>
+</html>
